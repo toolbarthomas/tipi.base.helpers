@@ -1,5 +1,5 @@
 @mixin default-helpers($viewport:'', $min-width:false, $max-width:false) {
-	@if $min-width != false {
+	@if $viewport != '' {
 		$viewport: '--' + $viewport;
 	}
 
