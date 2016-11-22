@@ -1,10 +1,49 @@
 @mixin core_helpers {
-	@include default-helpers();
-	@include default-helpers(smartphone, false, $smartphone-max-width);
-	@include default-helpers(phablet, $phablet-min-width, $phablet-max-width);
-	@include default-helpers(tablet, $tablet-min-width, $tablet-max-width);
-	@include default-helpers(tablet-landscape, $tablet-landscape-min-width, $tablet-landscape-max-width);
-	@include default-helpers(desktop, $desktop-min-width, $desktop-max-width);
-	@include default-helpers(widescreen, $widescreen-min-width, $widescreen-max-width);
-	@include default-helpers(highroller, $highroller-min-width, $highroller-max-width);
+	@include default-helpers(
+		$viewport: null,
+		$min-width: false,
+		$max-width: false
+	);
+
+	@include default-helpers(
+		$viewport: smartphone,
+		$min-width: false,
+		$max-width: $smartphone-max-width
+	);
+
+	@include default-helpers(
+		$viewport: phablet,
+		$min-width: $phablet-min-width,
+		$max-width: $phablet-max-width
+	);
+
+	@include default-helpers(
+		$viewport: tablet,
+		$min-width: $tablet-min-width,
+		$max-width: $tablet-max-width
+	);
+
+	@include default-helpers(
+		$viewport: tablet-landscape,
+		$min-width: $tablet-landscape-min-width,
+		$max-width: $tablet-landscape-max-width
+	);
+
+	@include default-helpers(
+		$viewport: desktop,
+		$min-width: $desktop-min-width,
+		$max-width: $desktop-max-width
+	);
+
+	@include default-helpers(
+		$viewport: widescreen,
+		$min-width: $widescreen-min-width,
+		$max-width: $widescreen-max-width
+	);
+
+	@include default-helpers(
+		$viewport: highroller,
+		$min-width: $highroller-min-width,
+		$max-width: $highroller-max-width
+	);
 }

@@ -1,9 +1,16 @@
-@mixin default-helpers($viewport:'', $min-width:false, $max-width:false) {
-	@if $viewport != '' {
+@mixin default-helpers(
+	$viewport: null,
+	$min-width: false,
+	$max-width: false
+) {
+	@if $viewport != null or $selector != '' {
 		$viewport: '--' + $viewport;
 	}
 
-	@include breakpoint($min-width, $max-width) {
+	@include breakpoint(
+		$min-width: $min-width,
+		$max-width: $max-width
+	) {
 		.clear#{$viewport} {
 			clear: both !important;
 		}
