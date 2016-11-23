@@ -1,6 +1,6 @@
 @mixin core_helpers {
 	@include default-helpers(
-		$viewport: null,
+		$viewport: '',
 		$min-width: false,
 		$max-width: false
 	);
