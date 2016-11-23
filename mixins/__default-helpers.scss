@@ -3,7 +3,7 @@
 	$min-width: false,
 	$max-width: false
 ) {
-	@if $viewport != null or $selector != '' {
+	@if $viewport != null or $viewport != '' {
 		$viewport: '--' + $viewport;
 	}
 
