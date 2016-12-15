@@ -30,6 +30,16 @@
 	);
 
 	@include default-helpers(
+		$viewport: tablet-landscape-and-smaller,
+		$max-width: $tablet-landscape-max-width
+	);
+
+	@include default-helpers(
+		$viewport: desktop-and-larger,
+		$min-width: $desktop-min-width
+	);
+
+	@include default-helpers(
 		$viewport: desktop,
 		$min-width: $desktop-min-width,
 		$max-width: $desktop-max-width
