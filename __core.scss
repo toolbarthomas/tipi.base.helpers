@@ -18,8 +18,18 @@
 	);
 
 	@include default-helpers(
+		$viewport: phablet-and-smaller,
+		$max-width: $phablet-max-width
+	);
+
+	@include default-helpers(
 		$viewport: tablet,
 		$min-width: $tablet-min-width,
+		$max-width: $tablet-max-width
+	);
+
+	@include default-helpers(
+		$viewport: tablet-and-smaller,
 		$max-width: $tablet-max-width
 	);
 
@@ -43,6 +53,11 @@
 		$viewport: desktop,
 		$min-width: $desktop-min-width,
 		$max-width: $desktop-max-width
+	);
+
+	@include default-helpers(
+		$viewport: widescreen-and-larger,
+		$min-width: $widescreen-min-width
 	);
 
 	@include default-helpers(
