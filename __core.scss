@@ -43,7 +43,6 @@
 
 	@include default-helpers(
 		$viewport: highroller,
-		$min-width: $highroller-min-width,
-		$max-width: $highroller-max-width
+		$min-width: $highroller-min-width
 	);
 }
