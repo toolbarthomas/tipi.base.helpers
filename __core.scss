@@ -23,6 +23,11 @@
 	);
 
 	@include default-helpers(
+		$viewport: phablet-and-larger,
+		$min-width: $phablet-min-width
+	);
+
+	@include default-helpers(
 		$viewport: tablet,
 		$min-width: $tablet-min-width,
 		$max-width: $tablet-max-width
@@ -31,6 +36,11 @@
 	@include default-helpers(
 		$viewport: tablet-and-smaller,
 		$max-width: $tablet-max-width
+	);
+
+	@include default-helpers(
+		$viewport: tablet-and-larger,
+		$min-width: $tablet-min-width
 	);
 
 	@include default-helpers(
@@ -45,8 +55,8 @@
 	);
 
 	@include default-helpers(
-		$viewport: desktop-and-larger,
-		$min-width: $desktop-min-width
+		$viewport: tablet-landscape-and-larger,
+		$min-width: $tablet-landscape-min-width
 	);
 
 	@include default-helpers(
@@ -56,8 +66,13 @@
 	);
 
 	@include default-helpers(
-		$viewport: widescreen-and-larger,
-		$min-width: $widescreen-min-width
+		$viewport: desktop-and-smaller,
+		$max-width: $desktop-max-width
+	);
+
+	@include default-helpers(
+		$viewport: desktop-and-larger,
+		$min-width: $desktop-min-width
 	);
 
 	@include default-helpers(
@@ -67,7 +82,18 @@
 	);
 
 	@include default-helpers(
+		$viewport: widescreen-and-smaller,
+		$max-width: $widescreen-max-width
+	);
+
+	@include default-helpers(
+		$viewport: widescreen-and-larger,
+		$min-width: $widescreen-min-width
+	);
+
+	@include default-helpers(
 		$viewport: highroller,
-		$min-width: $highroller-min-width
+		$min-width: $highroller-min-width,
+		$max-width: $highroller-max-width
 	);
 }
