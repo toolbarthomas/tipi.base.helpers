@@ -7,93 +7,93 @@
 
 	@include default-helpers(
 		$viewport: smartphone,
-		$min-width: false,
-		$max-width: $smartphone-max-width
+		$min-width: viewport(smartphone, min-width),
+		$max-width: viewport(smartphone, max-width)
 	);
 
 	@include default-helpers(
 		$viewport: phablet,
-		$min-width: $phablet-min-width,
-		$max-width: $phablet-max-width
+		$min-width: viewport(phablet, min-width),
+		$max-width: viewport(phablet, max-width)
 	);
 
 	@include default-helpers(
 		$viewport: phablet-and-smaller,
-		$max-width: $phablet-max-width
+		$max-width: viewport(phablet, max-width)
 	);
 
 	@include default-helpers(
 		$viewport: phablet-and-larger,
-		$min-width: $phablet-min-width
+		$max-width: viewport(phablet, min-width)
 	);
 
 	@include default-helpers(
 		$viewport: tablet,
-		$min-width: $tablet-min-width,
-		$max-width: $tablet-max-width
+		$min-width: viewport(tablet, min-width),
+		$max-width: viewport(tablet, max-width)
 	);
 
 	@include default-helpers(
 		$viewport: tablet-and-smaller,
-		$max-width: $tablet-max-width
+		$max-width: viewport(tablet, max-width)
 	);
 
 	@include default-helpers(
 		$viewport: tablet-and-larger,
-		$min-width: $tablet-min-width
+		$max-width: viewport(tablet, min-width)
 	);
 
 	@include default-helpers(
 		$viewport: tablet-landscape,
-		$min-width: $tablet-landscape-min-width,
-		$max-width: $tablet-landscape-max-width
+		$min-width: viewport(tablet-landscape, min-width),
+		$max-width: viewport(tablet-landscape, max-width)
 	);
 
 	@include default-helpers(
 		$viewport: tablet-landscape-and-smaller,
-		$max-width: $tablet-landscape-max-width
+		$max-width: viewport(tablet-landscape, max-width)
 	);
 
 	@include default-helpers(
 		$viewport: tablet-landscape-and-larger,
-		$min-width: $tablet-landscape-min-width
+		$max-width: viewport(tablet-landscape, min-width)
 	);
 
 	@include default-helpers(
 		$viewport: desktop,
-		$min-width: $desktop-min-width,
-		$max-width: $desktop-max-width
+		$min-width: viewport(desktop, min-width),
+		$max-width: viewport(desktop, max-width)
 	);
 
 	@include default-helpers(
 		$viewport: desktop-and-smaller,
-		$max-width: $desktop-max-width
+		$max-width: viewport(desktop, max-width)
 	);
 
 	@include default-helpers(
 		$viewport: desktop-and-larger,
-		$min-width: $desktop-min-width
+		$max-width: viewport(desktop, min-width)
 	);
 
 	@include default-helpers(
 		$viewport: widescreen,
-		$min-width: $widescreen-min-width,
-		$max-width: $widescreen-max-width
+		$min-width: viewport(widescreen, min-width),
+		$max-width: viewport(widescreen, max-width)
 	);
 
 	@include default-helpers(
 		$viewport: widescreen-and-smaller,
-		$max-width: $widescreen-max-width
+		$max-width: viewport(widescreen, max-width)
 	);
 
 	@include default-helpers(
 		$viewport: widescreen-and-larger,
-		$min-width: $widescreen-min-width
+		$max-width: viewport(widescreen, min-width)
 	);
 
 	@include default-helpers(
 		$viewport: highroller,
-		$min-width: $highroller-min-width,
-		$max-width: $highroller-max-width
+		$min-width: viewport(highroller, min-width),
+		$max-width: viewport(highroller, max-width)
 	);
 }
